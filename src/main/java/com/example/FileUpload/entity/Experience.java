@@ -11,11 +11,15 @@ public class Experience {
     private Long id;
 
 
-    private String employerName;
-    private String jobTitle;
-    private String jobDescription;
-    private String startDate;
-    private String endDate;
+    private String experience;
+    private String segregatedExperience;
+    private String currentEmployer;
+    private String jobProfile;
+   // private String jobDescription;
+    private String totalExperienceInMonths;
+    private String totalExperienceInYear;
+    private String totalExperienceRange;
+
 
 
     @ManyToOne
@@ -39,44 +43,61 @@ public class Experience {
         this.resume = resume;
     }
 
-    public String getEndDate() {
-        return endDate;
+
+    public String getExperience() {
+        return experience;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public void setExperience(String experience) {
+        this.experience = experience;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getSegregatedExperience() {
+        return segregatedExperience;
     }
 
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public void setSegregatedExperience(String segregatedExperience) {
+        this.segregatedExperience = segregatedExperience;
     }
 
-    public String getJobDescription() {
-        return jobDescription;
+    public String getCurrentEmployer() {
+        return currentEmployer;
     }
 
-    public void setJobDescription(String jobDescription) {
-        this.jobDescription = jobDescription;
+    public void setCurrentEmployer(String currentEmployer) {
+        this.currentEmployer = currentEmployer;
     }
 
-    public String getJobTitle() {
-        return jobTitle;
+    public String getJobProfile() {
+        return jobProfile;
     }
 
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
+    public void setJobProfile(String jobProfile) {
+        this.jobProfile = jobProfile;
     }
 
-    public String getEmployerName() {
-        return employerName;
+    public String getTotalExperienceInMonths() {
+        return totalExperienceInMonths;
     }
 
-    public void setEmployerName(String employerName) {
-        this.employerName = employerName;
+    public void setTotalExperienceInMonths(String totalExperienceInMonths) {
+        this.totalExperienceInMonths = totalExperienceInMonths;
+    }
+
+    public String getTotalExperienceInYear() {
+        return totalExperienceInYear;
+    }
+
+    public void setTotalExperienceInYear(String totalExperienceInYear) {
+        this.totalExperienceInYear = totalExperienceInYear;
+    }
+
+    public String getTotalExperienceRange() {
+        return totalExperienceRange;
+    }
+
+    public void setTotalExperienceRange(String totalExperienceRange) {
+        this.totalExperienceRange = totalExperienceRange;
     }
 }
 
